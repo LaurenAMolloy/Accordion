@@ -1,5 +1,6 @@
 import React from 'react'
-import Accordion from '../components/Accordion';
+import Accordion from '../components/Accordion'
+import backGroundDesktop from '../assets/background-pattern-desktop.svg';
 
 export default function AccordionPage() {
         const faqData = [
@@ -24,7 +25,12 @@ export default function AccordionPage() {
                 "The best place to get help is inside Frontend Mentor's Discord community. There's a help channel where you can ask questions and seek support from other community members."
             }
           ];
-  return <Accordion faqData={faqData}></Accordion>
+  return (
+    <>
+    <img className='h-' src={backGroundDesktop} alt="background image" />
+    <Accordion faqData={faqData}></Accordion>
+    </>
+  )
 
 }
 

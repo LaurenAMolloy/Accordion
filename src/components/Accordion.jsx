@@ -1,5 +1,9 @@
 import React from 'react'
 import { useState } from 'react'
+import iconMinus from '../assets/icon-minus.svg'
+import iconPlus from '../assets/icon-minus.svg'
+import iconStar from '../assets/icon-star.svg'
+
 
 
 export default function Accordion({faqData}) {
@@ -23,13 +27,19 @@ export default function Accordion({faqData}) {
         //console.log(isExpanded)
 
         return <div key={idx}>
-            <p onClick={()=> handleClick(idx)}>{data.label}</p>
+            <p className='px-2 py-2' onClick={()=> handleClick(idx)}>{data.label}</p>
             {isExpanded && <p>{data.content}</p>}
         </div>
     })
 
   return (
+    <div className="border rounded w-100 h-100 py-2 px-2 bg-white">
+    <div className="flex align-center">
+        <img src={iconStar}></img>
+        <h1 className="text-dark-purple text-2xl py-1 ml-3">FAQ</h1>
+    </div>
     <div>{renderedData}</div>
+    </div>
   )
 }
 
