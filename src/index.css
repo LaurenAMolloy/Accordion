@@ -3,7 +3,27 @@
 body {
   font-family: "Work Sans", sans-serif;
   background-color: hsl(275, 100%, 97%);
+  color: hsl(292, 42%, 14%);
 }
+
+@layer utilities {
+  .bg-pattern-mobile {
+    background-image: url("/src/assets/background-pattern-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+  }
+
+  .bg-pattern-desktop {
+    background-image: url("/src/assets/background-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: 200px;
+  }
+}
+
+
 
 @theme {
   --color-white: #ffffff;

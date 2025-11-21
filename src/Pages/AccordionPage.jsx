@@ -27,8 +27,10 @@ export default function AccordionPage() {
           ];
   return (
     <>
-    <img className='h-' src={backGroundDesktop} alt="background image" />
-    <Accordion faqData={faqData}></Accordion>
+    <div className="min-h-screen flex items-center justify-center bg-pattern-mobile md:bg-pattern-desktop" >
+      <Accordion faqData={faqData} />
+    </div>
+
     </>
   )
 
