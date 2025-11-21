@@ -34,10 +34,23 @@ export default function Accordion({faqData}) {
                 <img className='' src={iconPlus} onClick={()=> handleClick(idx)}></img>
             } 
             </div>
-            {isExpanded && <div className='transition-all duration-300-ease-in px-5 text-medium-purple'>{data.content}</div>}
+
+            <div
+                className={`
+                px-3 text-medium-purple
+                overflow-hidden
+                transition-all duration-500 ease-in-out
+                ${isExpanded ? "max-h-50" : "max-h-0"}
+                `}
+            >
+                <p className={
+                    `pb-4 transition-all delay-150 duration-500 ease-in-out
+                    ${isExpanded ? "opacity-100" : "opacity-0"}`}>{data.content}</p>
+           
             {idx !== faqData.length -1 && (
                 <div className='border-b border-light-purple mx-5'></div>
             )} 
+            </div>
             
         </div>
     })
