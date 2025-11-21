@@ -28,13 +28,13 @@ export default function Accordion({faqData}) {
         console.log(isExpanded)
 
         return <div className='py-5' key={idx}>
-            <div className='flex justify-between px-5 py-2 font-semibold'> 
+            <div className='flex justify-between px-5 py-2 font-semibold hover:text-medium-purple'> 
             {data.label}
             {isExpanded ? <img className='' src={iconMinus} onClick={()=> handleClick(idx)}></img> :
                 <img className='' src={iconPlus} onClick={()=> handleClick(idx)}></img>
             } 
             </div>
-            {isExpanded && <div className='px-5 text-medium-purple'>{data.content}</div>}
+            {isExpanded && <div className='transition-all duration-300-ease-in px-5 text-medium-purple'>{data.content}</div>}
             {idx !== faqData.length -1 && (
                 <div className='border-b border-light-purple mx-5'></div>
             )} 
@@ -43,7 +43,7 @@ export default function Accordion({faqData}) {
     })
 
   return (
-    <div className="w-5/6 md:w-md rounded py-2 px-2 bg-white">
+    <div className="w-5/6 md:w-lg rounded py-2 px-2 bg-white">
     <div className="flex align-center pt-5">
         <img src={iconStar}></img>
         <h1 className="text-dark-purple font-bold text-2xl py-1 ml-3">FAQs</h1>
