@@ -71,5 +71,5 @@ Accessibility: Currently missing ARIA attributes and semantic HTML. Future impro
 
 ## Author
 
-- Website - [Add your name here](https://www.linkedin.com/in/lauren-a-molloy/)
+- Website - [Lauren Molloy](https://www.linkedin.com/in/lauren-a-molloy/)
 - Frontend Mentor - [@LaurenAMolloy](https://www.frontendmentor.io/profile/yourusername)
