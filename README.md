@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./assets/mobile.png)
+![](src/assets/mobile.png)
 
 ### Links
 
